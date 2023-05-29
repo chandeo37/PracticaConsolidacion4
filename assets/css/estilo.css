@@ -1,0 +1,32 @@
+.fondoIngresa{
+    background-color: aquamarine;
+    border: 5px solid green;
+    border-radius: 12px;
+    margin-bottom: 2%;
+}
+
+.fondogasto{
+    background-color: darksalmon;
+    border: 5px solid red;
+    border-radius: 12px;
+    margin-top: 2%;
+
+}
+
+.fondoregistro{
+    background-color: rgb(241, 233, 112);
+    border: 5px solid yellow;
+    border-radius: 12px;
+    margin-bottom: 2%;
+}
+
+.fondoregistro1{
+    background-color: rgb(131, 221, 233);
+    border: 5px solid blue;
+    border-radius: 12px;
+    margin-top: 2%;
+}
+
+#fondo{
+    background-color: aquamarine;
+}

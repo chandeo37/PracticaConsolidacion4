@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Presupuesto</title>
+
+</head>
+<body onload="asignareventos()">
+    <div id="fondo" class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br>
+                <h1>Presupuesto V.1.0</h1>
+                <hr>
+                <br>
+                
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 ">
+                          
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 fondoIngresa">
+                                    
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="txtpresupuesto" class="form-label">Ingresa tu presupuesto</label>
+                                              <input type="text" class="form-control" id="txtpresupuesto" aria-describedby="presupuestolHelp">
+                                              <div id="presupuestolHelp" class="form-text">Ingrese un presupúesto que no sea un número negativo.</div>
+                                            </div>
+                                            
+                                            <button id="btncalcular" type="button" class="btn btn-outline-success">Calcular</button>
+                                          </form>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 fondogasto">
+                                        <p>Ingrese el nombre del gasto</p>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="txtnombregasto" class="form-label">Ingrese el nombre del gasto</label>
+                                                <input type="text" class="form-control" id="txtnombregasto" aria-describedby="nombregastoHelp">
+                                                <div id="nombregastoHelp" class="form-text">Ingrese una descripcion del gasto.</div>
+                                              </div>
+
+                                            <div class="mb-3">
+                                              <label for="txtcantidadgasto" class="form-label">Ingrese un valor</label>
+                                              <input type="text" class="form-control" id="txtcantidadgasto" aria-describedby="gastoHelp">
+                                              <div id="gastoHelp" class="form-text">Ingrese un gasto que no sea un número negativo.</div>
+                                            </div>
+                                            
+                                            <button id="btnanadirgasto" type="button" class="btn btn-outline-danger">Añadir gasto</button>
+                                          </form>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-8 bg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 fondoregistro">
+                                        
+                                        <div class="container">
+
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    Presupuesto
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    Gastos
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    Saldo
+
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                   <p id="parrafopresupuesto"> $</p>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                   <p id="parrafogasto">$</p> 
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="parrafosaldo">$</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 fondoregistro1">
+                                        
+                                        <div class="container">
+                                            
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                <p>Gasto</p>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p>valor</p>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <p>Accion</p>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                <p id="parrafodosgastos"></p>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="parrafovalor"></p>
+
+                                                </div>
+                                                <div  class="col-md-2">
+                                                    <p id="parrafoaccion" ></p>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    
+   
+
+      <script src="assets/js/boostrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
